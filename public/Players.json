@@ -1,0 +1,122 @@
+[
+  {
+    "playerImage": "https://i.ibb.co.com/z3GgWns/sakib.webp",
+    "playerName": "Shakib Al Hasan",
+    "playerCountry": "Bangladesh",
+    "playingRole": "All-Rounder",
+    "rating": 9.5,
+    "battingStyle": "Left-hand bat",
+    "bowlingStyle": "Slow left-arm orthodox",
+    "price": "$200,000"
+  },
+  {
+    "playerImage": "https://i.ibb.co.com/ns7bsq9W/tamim.webp",
+    "playerName": "Tamim Iqbal",
+    "playerCountry": "Bangladesh",
+    "playingRole": "Batsman",
+    "rating": 9.0,
+    "battingStyle": "Left-hand bat",
+    "bowlingStyle": "None",
+    "price": "$150,000"
+  },
+  {
+    "playerImage": "https://i.ibb.co.com/FkQvWPCd/mushi.webp",
+    "playerName": "Mushfiqur Rahim",
+    "playerCountry": "Bangladesh",
+    "playingRole": "Wicketkeeper Batsman",
+    "rating": 8.8,
+    "battingStyle": "Right-hand bat",
+    "bowlingStyle": "None",
+    "price": "$140,000"
+  },
+  {
+    "playerImage": "https://i.ibb.co.com/N6bf7J0R/rashid.webp",
+    "playerName": "Rashid Khan",
+    "playerCountry": "Afghanistan",
+    "playingRole": "Bowler",
+    "rating": 9.6,
+    "battingStyle": "Right-hand bat",
+    "bowlingStyle": "Leg break googly",
+    "price": "$220,000"
+  },
+  {
+    "playerImage": "https://example.com/faf.jpg",
+    "playerName": "Faf du Plessis",
+    "playerCountry": "South Africa",
+    "playingRole": "Batsman",
+    "rating": 9.1,
+    "battingStyle": "Right-hand bat",
+    "bowlingStyle": "Right-arm medium",
+    "price": "$180,000"
+  },
+  {
+    "playerImage": "https://example.com/narine.jpg",
+    "playerName": "Sunil Narine",
+    "playerCountry": "West Indies",
+    "playingRole": "All-Rounder",
+    "rating": 9.3,
+    "battingStyle": "Left-hand bat",
+    "bowlingStyle": "Right-arm off break",
+    "price": "$190,000"
+  },
+  {
+    "playerImage": "https://example.com/russell.jpg",
+    "playerName": "Andre Russell",
+    "playerCountry": "West Indies",
+    "playingRole": "All-Rounder",
+    "rating": 9.4,
+    "battingStyle": "Right-hand bat",
+    "bowlingStyle": "Right-arm fast",
+    "price": "$210,000"
+  },
+  {
+    "playerImage": "https://example.com/litton.jpg",
+    "playerName": "Litton Das",
+    "playerCountry": "Bangladesh",
+    "playingRole": "Wicketkeeper Batsman",
+    "rating": 8.7,
+    "battingStyle": "Right-hand bat",
+    "bowlingStyle": "None",
+    "price": "$130,000"
+  },
+  {
+    "playerImage": "https://example.com/mahmudullah.jpg",
+    "playerName": "Mahmudullah",
+    "playerCountry": "Bangladesh",
+    "playingRole": "All-Rounder",
+    "rating": 8.9,
+    "battingStyle": "Right-hand bat",
+    "bowlingStyle": "Off break",
+    "price": "$120,000"
+  },
+  {
+    "playerImage": "https://example.com/warner.jpg",
+    "playerName": "David Warner",
+    "playerCountry": "Australia",
+    "playingRole": "Batsman",
+    "rating": 9.2,
+    "battingStyle": "Left-hand bat",
+    "bowlingStyle": "Leg break",
+    "price": "$200,000"
+  },
+  {
+    "playerImage": "https://example.com/southee.jpg",
+    "playerName": "Tim Southee",
+    "playerCountry": "New Zealand",
+    "playingRole": "Bowler",
+    "rating": 8.6,
+    "battingStyle": "Right-hand bat",
+    "bowlingStyle": "Right-arm fast-medium",
+    "price": "$110,000"
+  },
+  {
+    "playerImage": "https://example.com/samcurran.jpg",
+    "playerName": "Sam Curran",
+    "playerCountry": "England",
+    "playingRole": "All-Rounder",
+    "rating": 9.0,
+    "battingStyle": "Left-hand bat",
+    "bowlingStyle": "Left-arm medium-fast",
+    "price": "$195,000"
+  }
+]
