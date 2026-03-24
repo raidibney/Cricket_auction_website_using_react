@@ -1,4 +1,4 @@
-import { Suspense } from 'react'
+import { Suspense, useState } from 'react'
 import './App.css'
 import navimg from "./assets/logo.png"
 import AvailablePlayer from './Components/AvailablePlayers/AvailablePlayer'
@@ -10,6 +10,7 @@ const playerDetails = async ()=>{
   return  res.json()
 }
 function App() {
+  const [coin, setcoin]=useState(5000000)
   const playerpromise=playerDetails()
   return (
     <>
@@ -24,9 +25,9 @@ function App() {
           </div>
 
           <div className="flex-none gap-2">
-            <span className='text-xl font-bold'>60000000</span>
-            <span className='text-xl font-bold'>coin</span>
-            <img src="" alt="" />
+            <span className='text-xl font-bold'>{coin}</span>
+            <span className='text-xl font-bold'> coin</span>
+            
           </div>
 
         </div>
@@ -35,14 +36,14 @@ function App() {
       {/*inheriting the components from here */}
       <BannerSection></BannerSection>
       <Suspense   fallback={
-    <div className="flex justify-center items-center h-40">
-      <span className="loading loading-spinner text-warning"></span>
-    </div>
-  }>
-         <AvailablePlayer  playerpromise={playerpromise} ></AvailablePlayer>
+       <div className="flex justify-center items-center h-40">
+       <span className="loading loading-spinner text-warning"></span>
+       </div>
+         }>
+      <AvailablePlayer  playerpromise={playerpromise} setcoin={setcoin} coin={coin} ></AvailablePlayer>
       </Suspense>
      
-
+        
       <SelectedPlayers></SelectedPlayers>
     </>
   )

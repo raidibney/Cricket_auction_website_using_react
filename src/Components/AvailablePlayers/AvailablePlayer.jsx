@@ -3,13 +3,22 @@ import { FaUser } from 'react-icons/fa';
 import { FaFlag } from 'react-icons/fa';
 import SelectedPlayers from "../SelectedPlayers/SelectedPlayers";
 
-const AvailablePlayer = ({ playerpromise }) => {
+const AvailablePlayer = ({ playerpromise, setcoin }) => {
   const playerdata = use(playerpromise)
-  //console.log(playerdata)
-    {/* declearing a state */}
-    const[selectedPlayersType, setselectedPlayersType]=useState("available")
-    //console.log(selectedPlayersType)
+  
+    {/* declearing a state for avaiable or selecting toggle */}
+    const[selectedPlayersType, setselectedPlayersType]=useState("available");
+    
+  {/*taking another state for the card button text change like slelected or not */}
+    const [selectedPlayers, setSelectedPlayers] = useState([]);
 
+    //function for the choose player 
+   const choosePlayer = (player) => {
+   alert(`${player.playerName} is selected`);
+   const numericPrice = Number(player.price.replace(/[$,]/g, '')); // remove $ and commas
+   setcoin((prevCoin) => prevCoin - numericPrice);
+   setSelectedPlayers((prev) => [...prev, player.playerName]); // mark as selected
+   };
   return (
     <section className="max-w-11/12 mx-auto">
      {/*toggling button*/}
@@ -31,7 +40,7 @@ const AvailablePlayer = ({ playerpromise }) => {
   {selectedPlayersType === "available" &&
     playerdata.map((player) => (
       <div
-        key={player.layerName}
+        key={player.playerName}
         className="card bg-base-100 shadow-sm border border-gray-200 hover:shadow-2xl hover:-translate-y-2 hover:border-yellow-400 transition-all duration-300 cursor-pointer"
       >
         <figure className="h-48 w-full overflow-hidden">
@@ -67,9 +76,11 @@ const AvailablePlayer = ({ playerpromise }) => {
 
           <div className="card-actions justify-between items-center">
             <p className="font-bold">Price: {player.price}</p>
-            <button className="btn btn-warning">
-              Choose Player
-            </button>
+          <button
+         onClick={() => choosePlayer(player)}
+         className="btn btn-warning">
+         {selectedPlayers.includes(player.playerName) ? "Selected" : "Choose Player"}
+         </button>
           </div>
         </div>
       </div>
